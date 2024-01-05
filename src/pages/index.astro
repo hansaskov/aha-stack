@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const user = Astro.locals.user;
+if (!user) {
+	return Astro.redirect("/login");
+}
+---
+
+<Layout title="Welcome to Astro.">
+	<main>hello world</main>
+</Layout>

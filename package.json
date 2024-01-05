@@ -1,0 +1,28 @@
+{
+  "name": "aha-stack",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "check": "astro check",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.4",
+    "@lucia-auth/adapter-drizzle": "1.0.0-beta.5",
+    "arctic": "^0.10.2",
+    "astro": "^4.1.0",
+    "better-sqlite3": "^9.2.2",
+    "drizzle-orm": "^0.29.3",
+    "lucia": "3.0.0-beta.14",
+    "oslo": "^0.27.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "drizzle-kit": "^0.20.10"
+  }
+}
