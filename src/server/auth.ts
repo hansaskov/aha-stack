@@ -1,7 +1,7 @@
 import { Lucia, TimeSpan } from "lucia";
 import { adapter } from "./db";
 import type { DatabaseUserAttributes } from "./schema";
-import { GitHub } from "arctic";
+import { GitHub, Google } from "arctic";
 
 export const lucia = new Lucia(adapter, {
     sessionExpiresIn: new TimeSpan(4, 'w'),
@@ -29,3 +29,10 @@ export const github = new GitHub(
 	import.meta.env.GITHUB_CLIENT_ID,
 	import.meta.env.GITHUB_CLIENT_SECRET
 );
+
+export const google = new Google(
+	import.meta.env.GOOGLE_CLIENT_ID,
+	import.meta.env.GOOGLE_CLIENT_SECRET,
+	"http://localhost:4321/api/oauth/google/callback",
+)
+
