@@ -2,14 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 
 if (Astro.locals.user) {
-    return Astro.redirect('/')
+  return Astro.redirect("/");
 }
-
 ---
 
-<Layout title="Login page">
-    <main>
-		<a href="/api/oauth/github">Sign in with GitHub</a>
-        <a href="/api/oauth/google">Sign in with Google</a>
-    </main>
+<Layout title="Login page" type="login">
+  <a href="/api/oauth/github">Sign in with GitHub</a>
+  <a href="/api/oauth/google">Sign in with Google</a>
 </Layout>

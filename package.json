@@ -8,7 +8,10 @@
     "build": "astro check && astro build",
     "check": "astro check",
     "preview": "astro preview",
-    "astro": "astro"
+    "format": "prettier --write . --plugin=prettier-plugin-astro",
+    "astro": "astro",
+    "push": "drizzle-kit push:sqlite",
+    "studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
@@ -27,6 +30,8 @@
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.8",
     "daisyui": "^4.5.0",
-    "drizzle-kit": "^0.20.10"
+    "drizzle-kit": "^0.20.10",
+    "prettier": "^3.1.1",
+    "prettier-plugin-astro": "^0.12.3"
   }
 }
